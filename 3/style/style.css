@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100;400;700&display=swap');
+@import './counter.css';
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Merriweather', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+}
+
+.active{
+color: #ffc107!important;
+}
+
+.btn {
+    padding: .375rem 1.75rem;
+    font-size: 20px;
+}
+
+.cylinder {
+    border-radius: 1.25rem;
+    padding: 0.5rem 2rem;
+}
+
+section {
+    margin: 10% 0;
+}
+
+.lead {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #909194;
+}
+
+.shadow {
+    box-shadow: 0 0 22px -4px rgb(0 0 0 / 17%);
+}
+
+.header-content-shadow {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    padding-top: 3rem;
+}
+
+.navbar-toggler {
+    border: none;
+    transition: 0.4s;
+}
+
+.navbar-toggler2 {
+    position: fixed;
+    top: 40px;
+    right: -15px;
+    border: none;
+    background: none;
+    z-index: 20;
+    color: #ffc107;
+    transition: 1s;
+}
+
+.nav-link {
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+    transform: translate(20px, 0px);
+    cursor: pointer;
+}
+
+.fa-compass {
+    color: #ffc107;
+}
+
+.offcanvas-end {
+    width: 400px;
+}
+
+header {
+    background-color: #f2f0e6;
+    background-image: url('../img/pexels-fwstudio-139312.jpg');
+    background-position: center;
+}
+
+.header-content {
+    position: relative;
+    padding-top: 10%;
+    padding-bottom: 15%;
+    text-align: center;
+}
+
+.header-content h1 {
+    color: #ffc107;
+}
+
+.header-content p,
+.header-content h2,
+.navbar-toggler i {
+    color: white;
+}
+
+.header-content img {
+    width: 75%;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.pricing {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: -6%;
+}
+
+.pricing-list {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.list-item {
+    padding: 5%;
+    text-align: center;
+}
+
+.list-item h2 {
+    color: #ffc107;
+}
+
+.list-item:nth-child(4) {
+    background-color: #ffc107;
+}
+
+.list-item:nth-child(4) h2 {
+    color: white;
+}
+
+.list-item .lead {
+    font-size: 16px;
+}
+
+.offer h4 {
+    margin: 30px 0;
+}
+
+.service {
+    background-color: #f2f0e6;
+    padding: 11%;
+    margin: 6%;
+    box-shadow: 25px -16px #eceadd;
+    transition: 0.8s;
+}
+
+.service:hover {
+    box-shadow: unset;
+}
+
+*+.service-text {
+    margin-top: 22px;
+}
+
+*+.service-title {
+    margin-top: 21px;
+}
+
+.offer a {
+    text-decoration: none;
+    color: unset;
+}
+
+.banner {
+    padding: 7% 0;
+    background-attachment: fixed;
+    background-image: url('../img/4853433.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    margin: 0;
+    margin-top: 10%;
+}
+
+.banner-text>* {
+    margin: 20px 0;
+}
+
+.banner-text h4 {
+    font-weight: normal;
+}
+
+.about-card {
+    box-shadow: 0 0 22px -4px rgb(0 0 0 / 17%);
+    transition: 0.5s;
+    background-color: white;
+}
+
+.about-card>h3,
+.about-card>p,
+.about-card>button {
+    margin: 1rem;
+}
+
+.about-card i {
+    margin-left: 0.7rem;
+}
+
+.about-card:hover {
+    color: #ffc107;
+    box-shadow: 0 -3px 36px rgb(41 48 67 / 35%);
+}
+
+.contact {
+    background-color: #ffc107;
+    padding: 3% 0;
+    /* margin: 0% 0; */
+}
+
+.contact h2,
+.contact h4 {
+    font-weight: normal;
+
+}
+
+.contact a {
+    font-weight: bold;
+    color: unset;
+    text-decoration: none;
+}
+
+.box {
+    background-color: white;
+    margin-bottom: -20%;
+}
+
+.form-control {
+    font-weight: bold;
+    padding: 1rem 1rem;
+    background-color: #ffc1071e;
+    border: none;
+    border-radius: 1.25rem;
+}
+
+.form-group {
+    margin: 3% 0;
+}
+
+footer {
+    margin: 25% 0;
+}
+
+.footer-socials{
+    margin-left: 2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer .lead{
+    font-size: 16px!important;
+}
+
+.footer_socials{
+    font-size: 1.5rem;
+}
+
+.footer_address{
+    width: 70%;
+}
+
+footer hr{
+    margin: 3rem 0;
+}
+
+@media only screen and (min-width: 1024px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .service {
+        box-shadow: 44px -16px #eceadd;
+    }
+
+    .contact{
+        margin: 0;
+    }
+
+    footer {
+        margin: 10% 0;
+    }
+    
+  
+}

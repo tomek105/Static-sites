@@ -1,0 +1,83 @@
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.counter1 {
+  animation:  years 2s 1 alternate ease-in-out;
+  counter-reset: num var(--num);
+  animation-fill-mode: forwards;
+  /* animation-iteration-count: 1; */
+}
+
+.counter1::after {
+  content: counter(num);
+}
+
+.counter3 {
+  animation: clients 2s 1 alternate ease-in-out;
+  counter-reset: num var(--num);
+  animation-fill-mode: forwards;
+}
+
+.counter3::after {
+  content: counter(num);
+}
+
+.counter4 {
+  animation: days 2s 1 alternate ease-in-out;
+  counter-reset: num var(--num);
+  animation-fill-mode: forwards;
+}
+
+.counter4::after {
+  content: counter(num);
+}
+
+.counter2 {
+  animation: hours 2s 1 alternate ease-in-out;
+  counter-reset: num var(--num);
+  animation-fill-mode: forwards;
+}
+
+.counter2::after {
+  content: counter(num);
+}
+
+@keyframes clients {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 642;
+  }
+}
+
+@keyframes years{
+  from {
+    --num: 2021;
+  }
+  to {
+    --num: 1998;
+  }
+}
+
+@keyframes hours {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 24;
+  }
+}
+
+@keyframes days{
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 7;
+  }
+}
+
